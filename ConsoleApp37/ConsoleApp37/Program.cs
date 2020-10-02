@@ -15,6 +15,10 @@ namespace ConsoleApp37
 
             Point p3 = new Point(10,15,'$');
             p3.Draw();
+            Hor_Lines line = new Hor_Lines(5, 10, 8, '*');
+            line.Drow();
+            Vert_Lines linee = new Vert_Lines(5, 10, 8, '*');
+            linee.draaw();
 
             Console.ReadLine();
 
