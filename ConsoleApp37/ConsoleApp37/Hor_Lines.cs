@@ -4,9 +4,9 @@ using System.Text;
 
 namespace ConsoleApp37
 {
-    class Hor_Lines
+    class Hor_Lines : Figure
     {
-        List<Point> pList;
+
 
         public Hor_Lines(int xLeft, int xRight, int y, char sym)
         {
@@ -18,13 +18,8 @@ namespace ConsoleApp37
             }
         }
 
-        public void Drow()
-        {
-            foreach(Point p in pList)
-            {
-                p.Draw();
-            }
+ 
         }
 
     }
-}
+

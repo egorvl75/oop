@@ -7,18 +7,16 @@ namespace ConsoleApp37
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '*'); 
-            p1.Draw();
-
-           Point p2 = new Point(4, 5, '#');
-            p2.Draw();
-
-            Point p3 = new Point(10,15,'$');
-            p3.Draw();
-            Hor_Lines line = new Hor_Lines(5, 10, 8, '*');
-            line.Drow();
-            Vert_Lines linee = new Vert_Lines(5, 10, 8, '*');
-            linee.draaw();
+            Console.SetBufferSize(80, 26); // window's size
+            // Рамка
+            Hor_Lines upline = new Hor_Lines(0, 78, 0, '+');
+            Hor_Lines downline = new Hor_Lines(0, 78, 24, '+');
+            Vert_Lines leftline = new Vert_Lines(0, 24, 0, '+');
+            Vert_Lines rightline = new Vert_Lines(0, 24, 78, '+');
+            upline.Drow();
+            downline.Drow();
+            leftline.Drow();
+            rightline.Drow();
 
             Console.ReadLine();
 
